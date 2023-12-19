@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 22:28:46 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/19 00:11:02 by ychahbi          ###   ########.fr       */
+/*   Updated: 2023/12/19 02:16:59 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ class DiamondTrap : virtual public FragTrap , virtual public ScavTrap
         DiamondTrap(const DiamondTrap& Copy);
         DiamondTrap& operator=(const DiamondTrap& Copy);
         std::string get_name();
-        //~DiamondTrap();  
+        ~DiamondTrap();  
 };

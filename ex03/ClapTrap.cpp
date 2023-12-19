@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:32:00 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/18 11:56:56 by ychahbi          ###   ########.fr       */
+/*   Updated: 2023/12/19 02:32:26 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,7 +60,7 @@ void ClapTrap::takeDamage(unsigned int amount)
     }
 }
 
-std::string ClapTrap::Name(){return (this->name);}
+std::string ClapTrap::Name() {return (name);}
 
 void ClapTrap::beRepaired(unsigned int amount)
 {

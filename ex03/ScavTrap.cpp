@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 10:00:21 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/18 11:57:14 by ychahbi          ###   ########.fr       */
+/*   Updated: 2023/12/19 02:16:09 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,11 @@ void    ScavTrap::guardGate()
 {
     std::cout << "ScavTrap " << this->Name() << " is now in Gate keeper mode." << std::endl;
 }
+
 ScavTrap& ScavTrap::operator=(const ScavTrap& Copy)
 {
     new(this) ScavTrap(Copy);
     return (*this);
 }
+
+ScavTrap::~ScavTrap(){}

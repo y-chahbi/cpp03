@@ -6,7 +6,7 @@
 #    By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/17 11:47:17 by ychahbi           #+#    #+#              #
-#    Updated: 2023/12/18 22:30:19 by ychahbi          ###   ########.fr        #
+#    Updated: 2023/12/19 02:14:44 by ychahbi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,16 +20,16 @@ OBJ_ALL = $(SRC:.cpp=.o)
 all: $(SUBJ)
 
 $(SUBJ): $(OBJ_ALL)
-	$(CC) $(FLAGS) $^ -o $@
+	@$(CC) $(FLAGS) $^ -o $@
 
 %.o: %.cpp ClapTrap.hpp ScavTrap.hpp FragTrap.hpp DiamondTrap.hpp
-	$(CC) $(FLAGS) -c $< -o $@
+	@$(CC) $(FLAGS) -c $< -o $@
 
 clean:
-	$(RM) $(OBJ_ALL)
+	@$(RM) $(OBJ_ALL)
 
 fclean: clean
-	$(RM) $(SUBJ)
+	@$(RM) $(SUBJ)
 
 re: fclean all
 
