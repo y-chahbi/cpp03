@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 22:28:48 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/25 11:54:39 by ychahbi          ###   ########.fr       */
+/*   Updated: 2023/12/25 12:32:24 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ DiamondTrap& DiamondTrap::operator=(const DiamondTrap& Copy)
 
 void    DiamondTrap::whoAmI()
 {
-    std::cout << 
+    std::cout << "|" << name << " " << Name() << "|" << std::endl;
 }
 DiamondTrap::~DiamondTrap(){
     std::cout << "DiamondTrap disconst Called!" << std::endl;
