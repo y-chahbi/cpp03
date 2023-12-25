@@ -6,12 +6,12 @@
 #    By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/17 11:47:17 by ychahbi           #+#    #+#              #
-#    Updated: 2023/12/17 14:57:48 by ychahbi          ###   ########.fr        #
+#    Updated: 2023/12/25 08:35:21 by ychahbi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SUBJ = ClapTrap
-SRC  = ClapTrap.cpp main.cpp ScavTrap.cpp
+SRC  = ClapTrap.cpp main.cpp
 CC= c++ -g
 FLAGS= -Wall -Wextra -Werror -std=c++98
 RM= rm -f
@@ -22,7 +22,7 @@ all: $(SUBJ)
 $(SUBJ): $(OBJ_ALL)
 	$(CC) $(FLAGS) $^ -o $@
 
-%.o: %.cpp ClapTrap.hpp ScavTrap.hpp
+%.o: %.cpp ClapTrap.hpp
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean:

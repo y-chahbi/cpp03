@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:32:00 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/19 02:32:26 by ychahbi          ###   ########.fr       */
+/*   Updated: 2023/12/25 09:30:04 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,15 @@
 
 ClapTrap::ClapTrap()
 {
+    std::cout << "ClapTrap Constructor Called!" <<std::endl;
     this->name = "";
     this->Hit = 10;
     this->Energy = 10;
     this->Attack = 0;
 }
 
-ClapTrap::ClapTrap(std::string name){    
+ClapTrap::ClapTrap(std::string name){
+    std::cout << "ClapTrap parameterized Constructor Called!" <<std::endl;
     this->name = name;
     this->Hit = 10;
     this->Energy = 10;
@@ -60,7 +62,7 @@ void ClapTrap::takeDamage(unsigned int amount)
     }
 }
 
-std::string ClapTrap::Name() {return (name);}
+std::string ClapTrap::Name(){return (this->name);}
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
@@ -72,4 +74,6 @@ void ClapTrap::beRepaired(unsigned int amount)
     }
 }
 
-ClapTrap::~ClapTrap(){}
+ClapTrap::~ClapTrap(){
+    std::cout << "ClapTrap Destructor Called!" <<std::endl;
+}

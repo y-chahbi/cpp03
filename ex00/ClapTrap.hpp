@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:31:57 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/17 11:42:01 by ychahbi          ###   ########.fr       */
+/*   Updated: 2023/12/25 08:34:29 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 class ClapTrap
 {
     private:
-        std::string name;
-        int         Hit;
-        int         Energy;
-        int         Attack;
+        std::string     name;
+        unsigned int    Hit;
+        int             Energy;
+        int             Attack;
     public:
         ClapTrap();
         ClapTrap(std::string);

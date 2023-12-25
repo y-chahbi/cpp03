@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 21:51:45 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/18 21:58:57 by ychahbi          ###   ########.fr       */
+/*   Updated: 2023/12/25 09:25:42 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ class FragTrap : public ClapTrap
         FragTrap(const FragTrap& Copy);
         FragTrap& operator=(const FragTrap& Copy);
         void highFivesGuys(void);
-        //~FragTrap();
+        ~FragTrap();
 };
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 14:57:52 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/18 11:52:57 by ychahbi          ###   ########.fr       */
+/*   Updated: 2023/12/25 09:31:50 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ class ScavTrap : public ClapTrap
         ScavTrap(const ScavTrap& Copy);
         ScavTrap& operator=(const ScavTrap& Copy);
         void guardGate();
+        void attack(const std::string& target);
+        ~ScavTrap();
 };
 
 #endif
