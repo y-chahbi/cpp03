@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:32:00 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/17 14:45:15 by ychahbi          ###   ########.fr       */
+/*   Updated: 2023/12/27 22:02:07 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap()
 {
-    this->name = "";
+    this->name = "default";
     this->Hit = 10;
     this->Energy = 10;
     this->Attack = 0;
@@ -42,25 +42,31 @@ void ClapTrap::attack(const std::string& target)
         std::cout << "ClapTrap " << this->name << " attacks " << target << " , causing " << "1" << " points of damage!" << std::endl;
         this->Energy--;
     }
+    else
+        std::cout << "ClapTrap can’t do anything!" << std::endl;
 }
 
 void ClapTrap::takeDamage(unsigned int amount)
 {
-    if (this->Hit > 0)
+    if (this->Hit - amount > 0)
     {
         this->Hit -= amount;
         std::cout << this->name << " Just take damage of 1 point and still " << this->Hit << " !." << std::endl;
     }
+    else
+       std::cout << "ClapTrap can’t do anything!" << std::endl;
 }
 
 void ClapTrap::beRepaired(unsigned int amount)
 {
-    if (this->Energy > 0)
+    if (this->Energy > 0 && this->Hit > 0)
     {
         this->Hit += amount;
         std::cout << this->name << " Just Repaired its self, Now its Hits is " << this->Hit << " !." << std::endl;
         this->Energy--;
     }
+    else
+       std::cout << "ClapTrap can’t do anything!" << std::endl;
 }
 
 ClapTrap::~ClapTrap(){}

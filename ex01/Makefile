@@ -6,14 +6,14 @@
 #    By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/17 11:47:17 by ychahbi           #+#    #+#              #
-#    Updated: 2023/12/18 11:52:30 by ychahbi          ###   ########.fr        #
+#    Updated: 2023/12/27 22:24:03 by ychahbi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SUBJ = Serena
 SRC  = ClapTrap.cpp main.cpp ScavTrap.cpp
-CC= c++ -g
-FLAGS= -Wall -Wextra -Werror -std=c++98
+CC= c++
+FLAGS= #-Wall -Wextra -Werror -std=c++98
 RM= rm -f
 OBJ_ALL = $(SRC:.cpp=.o)
 
@@ -33,4 +33,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: clean fclean all re
+.PHONY: clean

@@ -6,13 +6,14 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:32:00 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/25 08:54:38 by ychahbi          ###   ########.fr       */
+/*   Updated: 2023/12/27 22:28:41 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
 ClapTrap::ClapTrap()
+
 {
     std::cout << "ClapTrap Constructor Called!" << std::endl;
     this->name = "";
@@ -33,7 +34,9 @@ ClapTrap::ClapTrap(const ClapTrap& Copy){ *this = Copy; }
 
 ClapTrap& ClapTrap::operator=(const ClapTrap& Copy)
 {
-    new(this) ClapTrap(Copy.name);
+    if (this != &Copy) {
+        new(this) ClapTrap(Copy.name);
+    }
     return (*this);
 }
 

@@ -6,13 +6,13 @@
 #    By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/17 11:47:17 by ychahbi           #+#    #+#              #
-#    Updated: 2023/12/25 08:35:21 by ychahbi          ###   ########.fr        #
+#    Updated: 2023/12/27 21:37:37 by ychahbi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SUBJ = ClapTrap
 SRC  = ClapTrap.cpp main.cpp
-CC= c++ -g
+CC= c++
 FLAGS= -Wall -Wextra -Werror -std=c++98
 RM= rm -f
 OBJ_ALL = $(SRC:.cpp=.o)
@@ -33,4 +33,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY: clean fclean all re
+.PHONY: clean
