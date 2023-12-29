@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap()
 {
-    this->name = "default";
+    this->name = "";
     this->Hit = 10;
     this->Energy = 10;
     this->Attack = 0;
