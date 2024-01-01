@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:32:00 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/27 22:28:41 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/01/01 20:57:07 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ ClapTrap::ClapTrap()
 
 {
     std::cout << "ClapTrap Constructor Called!" << std::endl;
-    this->name = "";
+    this->name = "ClapTrap";
     this->Hit = 10;
     this->Energy = 10;
     this->Attack = 0;

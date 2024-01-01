@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:32:00 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/27 22:02:07 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/01/01 20:54:48 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 ClapTrap::ClapTrap()
 {
-    this->name = "";
+    this->name = "ClapTrap";
     this->Hit = 10;
     this->Energy = 10;
     this->Attack = 0;

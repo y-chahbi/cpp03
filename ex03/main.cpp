@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:31:54 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/25 12:45:53 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/01/01 23:40:11 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,8 @@
 
 int main()
 {
-    DiamondTrap a("dsfs");
-    a.attack("sdf");
+    DiamondTrap a("Youssef");
+    a.attack("chahbi");
+    a.takeDamage(1);
     a.whoAmI();
 }
