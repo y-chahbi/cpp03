@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:32:00 by ychahbi           #+#    #+#             */
-/*   Updated: 2024/01/01 20:54:48 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/01/07 18:14:10 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ ClapTrap::ClapTrap()
     this->Hit = 10;
     this->Energy = 10;
     this->Attack = 0;
+    std::cout << "ClapTrap constructors Called!" << std::endl;
 }
 
 ClapTrap::ClapTrap(std::string name){    
@@ -25,6 +26,7 @@ ClapTrap::ClapTrap(std::string name){
     this->Hit = 10;
     this->Energy = 10;
     this->Attack = 0;
+    std::cout << "ClapTrap Param constructors Called!" << std::endl;
 }
 
 ClapTrap::ClapTrap(const ClapTrap& Copy){ *this = Copy; }
@@ -51,7 +53,7 @@ void ClapTrap::takeDamage(unsigned int amount)
     if (this->Hit - amount > 0)
     {
         this->Hit -= amount;
-        std::cout << this->name << " Just take damage of 1 point and still " << this->Hit << " !." << std::endl;
+        std::cout << this->name << " Just take damage of " << amount << " point and still " << this->Hit << " !." << std::endl;
     }
     else
        std::cout << "ClapTrap can’t do anything!" << std::endl;
@@ -69,4 +71,6 @@ void ClapTrap::beRepaired(unsigned int amount)
        std::cout << "ClapTrap can’t do anything!" << std::endl;
 }
 
-ClapTrap::~ClapTrap(){}
+ClapTrap::~ClapTrap(){
+    std::cout << "ClapTrap destructor Called!" << std::endl;
+}

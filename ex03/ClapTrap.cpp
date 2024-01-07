@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:32:00 by ychahbi           #+#    #+#             */
-/*   Updated: 2024/01/01 23:22:18 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/01/07 18:15:14 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ void ClapTrap::takeDamage(unsigned int amount)
     if (this->Hit - amount > 0)
     {
         this->Hit -= amount;
-        std::cout << this->name << " Just take damage of 1 point and still " << this->Hit << " !." << std::endl;
+        std::cout << this->name << " Just take damage of "<<amount<<" point and still " << this->Hit << " !." << std::endl;
     }
     else
        std::cout << "ClapTrap can’t do anything!" << std::endl;

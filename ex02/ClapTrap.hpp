@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 11:31:57 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/18 11:56:12 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/01/07 17:50:16 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ class ClapTrap
         void attack(const std::string& target);
         void takeDamage(unsigned int amount);
         void beRepaired(unsigned int amount);
-        std::string Name();
+        std::string Name() const;
         void changeAttrs(std::string,int hit, int attcak, int energy);
         ~ClapTrap();
 };

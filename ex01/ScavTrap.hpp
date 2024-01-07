@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/17 14:57:52 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/27 22:18:04 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/01/07 17:37:08 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 
 class ScavTrap : public ClapTrap
 {
-    private:
     public:
         ScavTrap();
         ScavTrap(std::string);

@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 10:00:21 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/25 09:31:34 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/01/07 16:11:33 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 ScavTrap::ScavTrap(){
     std::cout << "ScavTrap Constructor Called!" <<std::endl;
+    changeAttrs("ScavTrap",100,20,50);
+
 }
 
 ScavTrap::ScavTrap(std::string name){

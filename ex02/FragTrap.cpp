@@ -6,7 +6,7 @@
 /*   By: ychahbi <ychahbi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/18 21:51:47 by ychahbi           #+#    #+#             */
-/*   Updated: 2023/12/25 09:27:25 by ychahbi          ###   ########.fr       */
+/*   Updated: 2024/01/07 17:49:09 by ychahbi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 FragTrap::FragTrap(){
     std::cout << "FragTrap Constructor Called!" <<std::endl;
+    changeAttrs("FragTrap",100,30,100);
 }
 
 FragTrap::FragTrap(std::string name){
@@ -30,7 +31,7 @@ void FragTrap::highFivesGuys(void)
 
 FragTrap& FragTrap::operator=(const FragTrap& Copy)
 {
-    new(this) FragTrap(Copy);
+    new(this) FragTrap(Copy.Name());
     return (*this);
 }
 
